@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>晒单</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bask.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-left">
+				<img src="images/product_detail/back@3x.png" alt="" class="header-left-img" />
+			</div>
+			晒单</div>
+		<!---->
+		<!--如果没有数据时-->
+		<div class="nodata" style="text-align: center;margin-top: 2.9rem; display: none;">
+			<img style="width: 2.66rem;height: 2.46rem;margin-bottom: 0.5rem;" src="images/nodata@2x.png" alt="没有数据" />
+			<p style="font-size: 0.28rem;color: #808080;">暂时没有晒单记录~</p>
+		</div>
+		<!---->
+		<div class="bask_wrap">
+			<div class="content">
+			    	<div class="user_info clearfix">
+			    		<div class="img">
+			    			<img src="" alt="头像" />
+			    		</div>
+			    		<div class="usertxt">
+			    			<p class="username">第一次我就中</p>
+			    			<p class="usertime">2017-06-10 15:40:08</p>
+			    		</div>
+			    		<div class="like">
+			    			<img src="images/bask_jiang/bask_like_no@2x.png" alt="点赞图片" />
+			    			<span class="like_num">54</span>
+			    		</div>
+			    	</div>
+			    	<ul class="goods_list">
+			    		<li class="goods_info">
+			    			<p class="goods_name">火影笔记本</p>
+			    			<p class="user_say">第一次参与拍得，竞价几次就没人跟我抢了</p>
+			    			<ul class="goods_img clearfix">
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+		    </div>
+		    <div class="content">
+			    	<div class="user_info clearfix">
+			    		<div class="img">
+			    			<img src="" alt="头像" />
+			    		</div>
+			    		<div class="usertxt">
+			    			<p class="username">第一次我就中</p>
+			    			<p class="usertime">2017-06-10 15:40:08</p>
+			    		</div>
+			    		<div class="like">
+			    			<img src="images/bask_jiang/bask_like_no@2x.png" alt="点赞图片" />
+			    			<span class="like_num">54</span>
+			    		</div>
+			    	</div>
+			    	<ul class="goods_list">
+			    		<li class="goods_info">
+			    			<p class="goods_name">火影笔记本</p>
+			    			<p class="user_say">第一次参与拍得，竞价几次就没人跟我抢了</p>
+			    			<ul class="goods_img clearfix">
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    				<li class="goods_img_item">
+			    					<img src="" alt="用户晒图" />
+			    				</li>
+			    			</ul>
+			    		</li>
+			    	</ul>
+		    </div>
+		</div>
+		 
+	    <script type="text/javascript">
+	    	//返回上一级页面
+			$('.header-left').on('click',function(){
+				history.go(-1);
+			});
+		//点赞
+		$('.like').on('click',function() {
+			var num  = $(this).find('.like_num').html();
+			if($(this).find('.like_num').hasClass('redd')){
+				num--;
+				$(this).find('img').attr({
+					'src':"images/bask_jiang/bask_like_no@2x.png"
+				});
+				$(this).find('.like_num').removeClass('redd').html(num);
+			}else{
+				num++;
+				$(this).find('img').attr({
+					'src':"images/bask_jiang/bask_like@2x.png"
+				});
+				$(this).find('.like_num').addClass('redd').html(num);
+			}
+		});
+	    </script>
+	</body>
+</html>

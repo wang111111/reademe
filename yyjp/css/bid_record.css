@@ -1,0 +1,32 @@
+.bid_content{
+	margin-top: 1rem;
+}
+.content_list{
+	padding: 0.3rem 0.26rem;
+	color: #737373;
+	font-size: 0.28rem;
+	border-bottom-style: solid;
+	border-bottom-color: #F0F0F0;
+	border-bottom-width: 0.01rem;
+}
+.content_list span{
+	float: left;
+}
+.content_list .username{
+	width: 35%;
+}
+.content_list .state{
+	width: 20%;
+	text-align: center;
+}
+.content_list .site{
+	width: 25%;
+	text-align: center;
+}
+.content_list .money{
+	width: 20%;
+	text-align: right;
+}
+.content_list:nth-of-type(1){
+	color: #FF334B;
+}

@@ -1,0 +1,75 @@
+.item{
+	width: 100%;
+	border-bottom: .01rem solid #f0f0f0;
+	/*border: 1px solid #000;*/
+}
+.item_left{
+	height: 1rem;
+	float: left;
+	margin-left: .2rem;
+}
+.item_left>h2{
+	font-size: .3rem;
+	color: #4d4d4d;
+	margin-top: .1rem;
+}
+.item_left>p{
+	font-size: .24rem;
+	color: #808080;
+}
+.item_right{
+	height: 1rem;
+	float: right;
+	line-height: 1rem;
+	margin-right: .2rem;
+	font-size: .3rem;
+}
+.green{
+	color: #2d9f2d;
+}
+.red{
+	color: #ff334b;
+}
+.orange{
+	color: #ff9935;
+}
+.gold{
+	margin: 0.3rem 0;
+}
+.jin_gold{
+	width: 49%;
+	float: left;
+	border-right-style: solid;
+	border-right-color: #808080;
+	border-right-width: 0.02rem;
+	font-size: 0.32rem;
+	color: #4C4C4C;
+	text-align: center;
+}
+.zeng_gold{
+	width: 50%;
+	float: left;
+	font-size: 0.32rem;
+	text-align: center;
+}
+.content_wrap .nav_bar .out,
+.content_wrap .nav_bar .get{
+	width: 50%;
+	float: left;
+	padding: 0.3rem 0;
+	text-align: center;
+	font-size: 0.28rem;
+	color: #4D4D4D;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.01rem;
+}
+.content_wrap .nav_bar li{
+	position: relative;
+}
+.content_wrap .nav_bar li.cur{
+	color: #FF334B;
+}
+.shouyi{
+	display: none;
+}

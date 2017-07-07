@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/product_detail.css"/>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.jquery.min.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-left">
+				<img src="images/product_detail/back@3x.png" alt="" class="header-left-img" />
+			</div>
+			商品详情</div>
+		<!---->
+		<!--轮播图-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<a class="swiper-slide" href="#1">
+					<img class="swiper-img" src="" alt="Slide 1">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+				<a class="swiper-slide" href="#2">
+					<img class="swiper-img" src="" alt="Slide 2">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+				<a class="swiper-slide" href="#3">
+					<img class="swiper-img" src="" alt="Slide 3">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+				<a class="swiper-slide" href="#3">
+					<img class="swiper-img" src="" alt="Slide 4">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<div class="bullet">
+				恭喜<span class="bullet_username redd">一本万利</span>
+				以<span class="bullet_money redd">￥7.60</span>
+				拍中<span class="bullet_shop">火影笔记本</span>
+			</div>
+		</div>
+		<!---->
+		<!--商品描述-->
+		<div class="s_describe">
+			<p class="s_describe_title">火影笔记本</p>
+			<p class="s_describe_content">金刚V5 6代i7 GTX965M 4G独显</p>
+		</div>
+		<!---->
+		<!--商品竞拍信息-->
+		<div class="s_auction_now" id="xiding">
+			<div class="s_auction_now_t">
+				<p class="st_txt">距结束仅剩</p>
+				<p class="st_txt_completed">竞拍已结束</p>
+				<p class="st_count_down">00:00:<i>10</i></p>
+			</div>
+			<div class="s_auction_now_price">
+				<span class="sp_symbol">￥</span>
+				<span class="sp_price">11.50</span>
+				<span class="sp_txt">市场价</span>
+				<span class="sp_market">￥8000</span>
+			</div>
+		</div>
+		<!---->
+		<!--竞拍提示-->
+		<div class="s_tip">
+			若无人出价，
+			<span class="redd">一本万利</span>将以
+			<span class="redd">￥11.50</span>拍得本商品
+		</div>
+		<!---->
+		<!--出价记录-->
+		<div class="bid_record clearfix">
+			<div class="bid_record_l">出价记录</div>
+			<div class="bid_record_r">
+				我已消耗<i class="bid_record_gold redd">0</i>拍币/赠币
+			</div>
+		</div>
+		<ul class="b_record_info">
+			<li class="b_record__list clearfix">
+				<span class="item b_first">一本万利</span>
+				<span class="item">领先</span>
+				<span class="item">上海静安</span>
+				<span class="item b_last">￥11.50</span>
+			</li>
+			<li class="b_record__list clearfix">
+				<span class="item b_first">一本万利里里里离力量力量离理</span>
+				<span class="item">领先</span>
+				<span class="item">上海静安</span>
+				<span class="item b_last">￥11.50</span>
+			</li>
+			<li class="b_record__list clearfix">
+				<span class="item b_first">一本万利里里里离力量力量离理</span>
+				<span class="item">领先</span>
+				<span class="item">上海静安</span>
+				<span class="item b_last">￥11.50</span>
+			</li>
+		</ul>
+		<!---->
+		<!--一元竞拍-->
+		<div class="p_o_auction">
+			<p>一元竞拍</p>
+		</div>
+		<div class="p_o_auction_list clearfix">
+			<div class="item clearfix">
+				<span class="item_l">起拍价</span>
+				<span class="item_r">￥0.00</span>
+			</div>
+			<div class="item clearfix">
+				<span class="item_l">起拍价</span>
+				<span class="item_r">￥0.00</span>
+			</div>
+			<div class="item clearfix">
+				<span class="item_l">起拍价</span>
+				<span class="item_r">￥0.00</span>
+			</div>
+			<div class="item clearfix">
+				<span class="item_l">起拍价</span>
+				<span class="item_r">￥0.00</span>
+			</div>
+			<div class="item clearfix">
+				<span class="item_l">起拍价</span>
+				<span class="item_r">￥0.00</span>
+			</div>
+		</div>
+		<!---->
+		<!--承诺-->
+		<div class="p_promise clearfix">
+			<span class="item">零风险</span>
+			<span class="item">正品承诺</span>
+			<span class="item">急速发货</span>
+			<span class="item">公平公正</span>
+		</div>
+		<div class="p_white"></div>
+		<!---->
+		<!--晒单分享，往期成交，竞拍规则-->
+		<div class="p_bask">
+			<ul class="p_bask_title clearfix">
+				<li class="item cur">晒单分享
+					<span class="list_top_ul_line curShow"></span>
+				</li>
+				<li class="item">往期成交
+					<span class="list_top_ul_line"></span>
+				</li>
+				<li class="item">竞拍规则
+					<span class="list_top_ul_line"></span>
+				</li>
+			</ul>
+			<div class="p_content">
+				<!--如果没有数据-->
+				<div class="nodata" style="text-align: center;margin-top: 0.6rem;display: none;">
+					<img style="width: 2.66rem;height: 2.46rem;margin-bottom: 0.5rem;" src="images/nodata@2x.png" alt="没有数据" />
+					<p style="font-size: 0.28rem;color: #808080;">暂时没有晒单记录~</p>
+				</div>
+				<!---->
+				<ul class="p_bask_content item"">
+					<li class="p_bask_content_item clearfix">
+						<div class="p_bask_portrait_l">
+							<div class="p_bask_portrait">
+								<img src="" alt="头像" />
+							</div>
+						</div>
+						<div class="p_bask_portrait_r">
+							<p class="username_time clearfix">
+								<span class="username">第一次我就中</span>
+								<span class="time">2017-06-08</span>
+							</p>
+							<p class="shopname">火影笔记本</p>
+							<p class="usersay">第一次参与拍的，竞价几次就没人跟我抢了第一次参与拍的，竞价几次就没人跟我抢了</p>
+							<ul class="portrait_r_bask clearfix">
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="p_bask_content_item clearfix">
+						<div class="p_bask_portrait_l">
+							<div class="p_bask_portrait">
+								<img src="" alt="头像" />
+							</div>
+						</div>
+						<div class="p_bask_portrait_r">
+							<p class="username_time clearfix">
+								<span class="username">第一次我就中</span>
+								<span class="time">2017-06-08</span>
+							</p>
+							<p class="shopname">火影笔记本</p>
+							<p class="usersay">第一次参与拍的，竞价几次就没人跟我抢了第一次参与拍的，竞价几次就没人跟我抢了</p>
+							<ul class="portrait_r_bask clearfix">
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+								<li class="portrait_r_bask_item">
+									<img src="" alt="晒图" />
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul class="p_deal item">
+					<li class="p_bask_content_item clearfix">
+						<div class="p_bask_portrait_l">
+							<div class="p_bask_portrait">
+								<img src="" alt="头像" />
+							</div>
+						</div>
+						<div class="p_deal_portrait_m">
+							<p class="username">第一次我就中</p>
+							<p class="price">
+								<span>市场价:</span>
+								<span class="market_price">￥100.00</span>
+							</p>
+							<p class="money">
+								<span>成交价:</span>
+								<span class="rea_money">￥11.50</span>
+							</p>
+							<p>2017-06-08&nbsp;13:29:08</p>
+						</div>
+						<div class="p_deal_portrait_r">
+							节省:<span class="save">85.5%</span>
+						</div>
+					</li>
+					<li class="p_bask_content_item clearfix">
+						<div class="p_bask_portrait_l">
+							<div class="p_bask_portrait">
+								<img src="" alt="头像" />
+							</div>
+						</div>
+						<div class="p_deal_portrait_m">
+							<p class="username">第一次我就中</p>
+							<p class="price">
+								<span>市场价:</span>
+								<span class="market_price">￥100.00</span>
+							</p>
+							<p class="money">
+								<span>成交价:</span>
+								<span class="rea_money">￥11.50</span>
+							</p>
+							<p>2017-06-08&nbsp;13:29:08</p>
+						</div>
+						<div class="p_deal_portrait_r">
+							节省:<span class="save">85.5%</span>
+						</div>
+					</li>
+				</ul>
+				<div class="p_rule item">
+					<p>1.所有商品竞拍初始均为0元起，每出一次出价会消耗一定数量的拍币，同时商品价格以0.1元递增；</p>
+					<p>2.在初始倒计时内即可出价，初始倒计时后进入竞拍倒计时，当您出价后，该件商品的计时器被自动重置，以便其他用户进行出价竞争；如果没有其他用户对该件商品出价，计时器归零时您便成功拍的了该商品；</p>
+					<p>3.若拍卖成功，请在3天内以成交价购买竞拍商品，超过3天未下单，视为放弃，不返拍币；</p>
+					<p>4.若拍卖失败，将返还所消耗拍币的30%，赠币除外。</p>
+				</div>
+			</div>	
+		</div>
+		<!---->
+		<!--底部出价按钮-->
+		<div class="auction_btn">
+			<p class="txtabove">出价</p>
+			<p class="txtbelow">1拍币/次</p>
+		</div>
+		<!--竞拍成功--显示的按钮-->
+		<div class="auction_btn_completed clearfix">
+			<a class="check_order_btn" href="prize_affirm.html">查看订单</a>
+			<a class="gotonext_btn" href="index.html">前往下一期</a>
+		</div>
+		<!---->
+		<!--已成交--显示的按钮-->
+		<div class="auction_btn_already">前往下一期</div>
+		<!---->
+		<!---->
+		<script>
+			//	轮播图
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+		        autoplay:4000,
+			});
+			//tab切换
+			var dom = $('.p_bask_title .item');
+			var pContent = $('.p_content .item');
+			tabSwitch(dom);
+			dom.each(function(i,v){
+				$(this).on('click',function(){
+					pContent.eq(i).show().siblings().hide();
+				})
+			});
+			//吸顶
+			(function xiding(){
+				var x = $('.s_auction_now');
+	//			var xHEIGHT =x.outerHeight();
+				var b = $('.p_bask_title');
+	//			var basknav = b.offset().top-xHEIGHT-100;
+				var basknav = b.offset().top-360;
+				var t = x.offset().top-100;
+				
+				var xflag = false;
+				var bflag = false;
+				toShow();
+				$(window).on('scroll',function(){
+					var st = $(document).scrollTop();
+					st>t?xflag=true:xflag=false;
+					st>basknav?bflag=true:bflag=false;
+					toShow();
+				});
+				function toShow(){
+					if(xflag){
+						x.addClass('xiding');
+					}else{
+						x.removeClass('xiding');
+					};
+					if(bflag){
+						b.addClass('xiding2');
+					}else{
+						b.removeClass('xiding2');
+					}
+				};
+			})();
+			//返回上一级页面
+			$('.header-left').on('click',function(){
+				history.go(-1);
+			});
+			//出价记录
+			$('.bid_record_l').on('click',function() {
+				window.location.href = ('bid_record.html');
+			});
+			//倒计时
+			var timerId;
+			function count_down(time){
+				timerId = setInterval(function(){
+				$('.st_count_down i').html(time);
+				if(time<=0){
+					$('.swiper_completed').show();
+					$('.st_txt_completed').show().prev().hide();
+					$('.auction_btn_completed').show().prev().hide();
+					return;
+				}
+				time -= 1;
+				time<10?time='0'+time:time;
+				console.log(time);
+					
+				},1000);
+			};
+			$('.auction_btn').click(function() {
+				clearInterval(timerId);
+				count_down(10);
+			}); 
+		</script>
+	</body>
+</html>

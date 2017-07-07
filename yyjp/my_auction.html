@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的竞拍</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/my_auction.css" />
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="header">
+        我的竞拍
+        <div class="header-left">
+            <img src="images/tab/return.png" alt="" class="header-left-img">
+        </div>
+    </div>
+    <div class="w-list">
+        <div class="w-nav">
+            <div class="w-nav-item w-nav-item-on">
+                <span class="w-nav-txt">全部</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">正在拍</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">我拍中</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">未拍中</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">待付款</span>
+            </div>
+        </div>
+        <div style="height: 0.3rem;background-color: #f0f0f0;"></div>
+        <div class="qiehuan-list" style="display: block;">
+            <p>1</p>
+        </div>
+        <div class="qiehuan-list" style="display: none;">
+            <p>2</p>
+        </div>
+        <div class="qiehuan-list" style="display: none;">
+            <p>3</p>
+        </div>
+        <div class="qiehuan-list" style="display: none;">
+            <p>4</p>
+        </div>
+        <div class="qiehuan-list" style="display: none;">
+            <div class="list-top clearfix">
+                <img src="images/my_auction/mark.png" alt="" class="mark">
+                <div class="top-left" style="background: url(images/recharge/pay1.png) center no-repeat;background-size: 1.18rem 1.02rem;">
+                    <img src="images/my_auction/watermark.png" alt="" class="watermark">
+                </div>
+                <div class="top-middle">
+                    <div class="top-middle-inner">
+                        <p class="middle-text1">市场价：<span>￥7999</span></p>
+                        <p class="middle-text1">成交价：<span>￥452.20</span></p>
+                        <p class="middle-text2">成交时间:2017-05-13 09:09:11</p>
+                    </div>
+                </div>
+                <div class="top-right clearfix">
+                    <p class="right-text1">节省</p>
+                    <p class="right-text2">87.5<span>%</span></p>
+                </div>
+            </div>
+            <div class="list-bottom clearfix">
+                <div class="bottom-left">
+                    <p class="bottom-text1">成交人：一本万利</p>
+                    <p class="bottom-text2">剩余付款时间：<span>2天23小时49分</span></p>
+                </div>
+                <div class="bottom-right">
+                    <p class="bottom-text3">去付款</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(function() {
+        $(".w-nav-item").each(function(i) {
+            $(this).click(function() {
+                $(this).addClass("w-nav-item-on").siblings().removeClass("w-nav-item-on");
+                $(".qiehuan-list:eq(" + i + ")").show().siblings(".qiehuan-list").hide();
+            })
+        })
+    });
+    //返回上一级页面
+		$('.header-left').on('click',function(){
+			history.go(-1);
+		});
+    </script>
+</body>
+
+</html>

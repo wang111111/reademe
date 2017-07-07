@@ -1,0 +1,170 @@
+.header {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: rgb(252, 55, 80);
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.36rem;
+    color: #FFFFFF;
+}
+
+.header-right {
+    position: absolute;
+    right: 0.26rem;
+    top: 0.26rem;
+    width: 0.48rem;
+    height: 0.48rem;
+}
+
+.user-info {
+    background: rgb(252, 55, 80);
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.icon-box {
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.user-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+
+.user-name {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+    color: #fff;
+}
+
+.user-id {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 0.24rem;
+    color: #fff;
+    padding-bottom: 0.3rem;
+}
+
+.data-list {
+    background-color: #fff;
+}
+
+.data-item {
+    width: 25%;
+    float: left;
+}
+
+.data-item:nth-of-type(1):after,
+.data-item:nth-of-type(2):after,
+.data-item:nth-of-type(3):after {
+    content: '';
+    position: absolute;
+    background: #f0f0f0;
+    width: 0.02rem;
+    height: 0.5rem;
+    margin-left: 1.875rem;
+    margin-top: -0.85rem;
+}
+
+.data-num {
+    text-align: center;
+    font-size: 0.34rem;
+    color: #4d4d4d;
+    margin-top: 0.2rem;
+}
+
+.data-name {
+    text-align: center;
+    font-size: 0.26rem;
+    color: #808080;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.data-img {
+    width: 0.44rem;
+    height: 0.44rem;
+    margin-top: 0.14rem;
+}
+
+.auction {
+    margin-top: 0.3rem;
+    background-color: #fff;
+}
+
+.auction-title {
+    background-color: #fff;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-left: 0.26rem;
+    font-size: 0.26rem;
+    color: #4d4d4d;
+    float: left;
+}
+
+.auction-list {
+    margin-top: 0.01rem;
+}
+
+.auction-item {
+    float: left;
+    width: 25%;
+}
+
+.auction-img {
+    width: 0.53rem;
+    height: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.auction-name {
+    font-size: 0.24rem;
+    color: #808080;
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.icon-right {
+    display: inline-block;
+    width: 0.1rem;
+    height: 0.1rem;
+    border: 0.02rem solid #808080;
+    border-width: 0 0.02rem 0.02rem 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.service-list{
+	margin-top: 0.3rem;
+	background-color: #fff;
+}
+.service-item{
+	
+}
+.service-box{
+	border-bottom: 0.02rem solid #f0f0f0;
+}
+.service-img{
+	width: 0.36rem;
+	height: 0.48rem;
+	vertical-align: middle;
+}
+.service-name{
+	float: left;
+	font-size: 0.28rem;
+	color: #808080;
+	padding-left: 0.1rem;
+}
+.statement{
+	background-color: #fff;
+	padding: 0.4rem 0;
+	text-align: center;
+	font-size: 0.22rem;
+	color: #9a9999;
+}

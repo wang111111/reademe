@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>在线支付</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/online_pay.css" />
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="header">
+        在线支付
+        <div class="header-left">
+            <img src="images/tab/return.png" alt="" class="header-left-img">
+        </div>
+    </div>
+    <div class="banner clearfix">
+        <div class="banner-left">
+            <img src="" alt="">
+        </div>
+        <div class="banner-right">
+            <div class="banner-right-inner">
+                <p class="banner-title">支付金额:</p>
+                <p class="banner-price"><span style="font-size: 0.28rem;">￥</span>87.5</p>
+            </div>
+        </div>
+    </div>
+    <p style="height: 0.3rem;background-color: #f0f0f0;"></p>
+    <p style="height: 1rem;line-height: 1rem;font-size: 0.3rem;color: #333;padding-left: 0.26rem;border-bottom: 0.01rem solid #f0f0f0;">选择支付方式</p>
+    <div class="pay-item clearfix">
+        <div class="pay-l">
+            <img src="images/recharge/pay1.png" alt="" class="pay-img">
+        </div>
+        <div class="pay-r clearfix">
+            <p class="pay-text">微信</p>
+            <div style="float: right;">
+                <img src="images/recharge/default.png" alt="" class="pay-icon">
+            </div>
+        </div>
+    </div>
+    <div class="pay-item clearfix">
+        <div class="pay-l">
+            <img src="images/recharge/pay2.png" alt="" class="pay-img">
+        </div>
+        <div class="pay-r clearfix">
+            <p class="pay-text">支付宝</p>
+            <div style="float: right;">
+                <img src="images/recharge/default.png" alt="" class="pay-icon">
+            </div>
+        </div>
+    </div>
+    <div class="pay-item clearfix">
+        <div class="pay-l">
+            <img src="images/recharge/pay3.png" alt="" class="pay-img" style="width: 0.58rem;height: 0.38rem;">
+        </div>
+        <div class="pay-r clearfix">
+            <p class="pay-text">银联支付</p>
+            <div style="float: right;">
+                <img src="images/recharge/default.png" alt="" class="pay-icon">
+            </div>
+        </div>
+    </div>
+    <script>
+    $('.pay-item').each(function(i, e) {
+        $(this).click(function() {
+            console.log(i);
+            $('.pay-icon').each(function() {
+                $(this).attr('src', 'images/recharge/default.png');
+            })
+            $('.pay-icon').eq(i).attr('src', 'images/recharge/choose.png')
+        })
+
+    });
+    </script>
+</body>
+
+</html>

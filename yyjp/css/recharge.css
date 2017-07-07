@@ -1,0 +1,154 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.encourage {
+    padding-top: .3rem;
+}
+
+.encourage p {
+    margin-left: .26rem;
+    margin-right: .26rem;
+    font-size: .32rem;
+    color: #333;
+}
+
+.encourage p span {
+    font-size: .36rem;
+    color: #ff334b
+}
+
+.recharge-title {
+    padding-top: .2rem;
+}
+
+.title-l {
+    float: left;
+    margin-left: 0.26rem;
+    font-size: 0.3rem;
+    color: #333;
+}
+
+.title-r {
+    float: right;
+    margin-right: 0.26rem;
+    font-size: 0.3rem;
+    color: #ff334b;
+}
+
+.recharge-list {}
+
+.recharge-item {
+    width: 2.12rem;
+    height: 0.86rem;
+    border: 0.02rem solid #808080;
+    border-radius: 0.08rem;
+    color: #000;
+    font-size: 0.4rem;
+    line-height: 0.86rem;
+    text-align: center;
+    float: left;
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    outline: none;
+}
+
+.recharge-item:last-child {
+    font-size: .36rem;
+}
+
+.recharge-item-choose {
+    color: #ff334b;
+    border-color: #ff334b;
+}
+
+.pay-item {
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.pay-l {
+    width: 18%;
+    float: left;
+}
+
+.pay-r {
+    width: 82%;
+    float: left;
+    border-bottom: 0.01rem solid #f0f0f0;
+}
+
+.pay-img {
+    width: 0.87rem;
+    height: 0.72rem;
+    vertical-align: middle;
+    margin-left: 0.26rem;
+}
+
+.pay-text {
+    font-size: 0.34rem;
+    color: #4d4d4d;
+    float: left;
+}
+
+.pay-remark {
+    font-size: 0.24rem;
+    color: #ff334b;
+}
+
+.pay-icon,.pay-icon0{
+    width: 0.69rem;
+    height: 0.69rem;
+    margin-right: 0.26rem;
+    vertical-align: middle;
+}
+
+.submit {
+    position: fixed;
+    left: 0;
+    bottom: 0.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-btn {
+    width: 6.98rem;
+    height: 0.8rem;
+    font-size: 0.4rem;
+    color: #fff;
+    line-height: 0.8rem;
+    text-align: center;
+    background-color: #ff334b;
+    border-radius: 0.16rem;
+    display: inline-block;
+}
+.paynum{
+    padding: .2rem 0;
+    border-top: 0.01rem solid #f0f0f0;
+    margin-top: .4rem;
+}
+.paynum p {
+    margin-left: .26rem;
+    margin-right: .26rem;
+    font-size: .32rem;
+    color: #4d4d4d;
+}
+.paynum p:last-child{
+    font-size: .3rem;
+    color: #ff334b;
+}
+.payuse {
+    height: 1rem;
+    line-height: 1rem;
+    padding-top: .2rem;
+    border-top: 0.01rem solid #f0f0f0;
+    padding-bottom: .2rem;
+    /*display: none;*/
+}
+.payuse>.pay-r{
+    border-bottom:0;
+}

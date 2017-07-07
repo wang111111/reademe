@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>最新成交</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/completed_newest.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.jquery.min.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">一元竞拍</div>
+		<!---->
+		<!--跑马灯-->
+		<div class="marquees clearfix">
+			<div class="marquees_logo">
+				<img style="width: 100%;height: 100%;" src="images/index/marquee@3x.png" alt="竞拍头条">
+			</div>
+			<div class="marquees-container">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide swiper-no-swiping marquees_div">恭喜<span class="marquees_username">一本万利以</span><span class="marquees_red">￥6.90</span>拍中<span class="marquees_red">移动电源30元</span></li>
+					<li class="swiper-slide swiper-no-swiping marquees_div">恭喜<span class="marquees_username">二本万利以<span class="marquees_red">￥6.90</span>拍中<span class="marquees_red">商品名字商品名字</span></li>
+					<li class="swiper-slide swiper-no-swiping marquees_div">恭喜<span class="marquees_username">三本万利以<span class="marquees_red">￥6.90</span>拍中<span class="marquees_red">苹果8plus</span></li>
+				</ul>
+			</div>
+			<div class="marquees_back">></div>
+		</div>
+		<!--最新成交的列表内容-->
+		<ul class="content">
+			<li class="content_list">
+				<h1 class="time">2017-05-13 09:08:11</h1>
+				<div class="below clearfix">
+					<div class="left">
+						<img class="img" src="" alt="商品图片"/>
+						<img class="img_yi" src="images/yichengjiao@2x.png" alt="已成交"/>
+					</div>
+					<div class="middle">
+						<p class="username">
+							<span>成交人：</span>
+							<span>一本万利</span>
+						</p>
+						<p class="market_price">
+							<span>市场价：</span>
+							<span>￥452.20</span>
+						</p>
+						<p class="username">
+							<span>成交价：</span>
+							<span class="redd">￥452.20</span>
+						</p>
+					</div>
+					<div class="right">
+						<p>节省</p>
+						<p class="precent"><i>87.5</i>%</p>
+						<p class="btn">参与竞拍</p>
+					</div>
+				</div>
+			</li>
+			<li class="content_list">
+				<h1 class="time">2017-05-13 09:08:11</h1>
+				<div class="below clearfix">
+					<div class="left">
+						<img class="img" src="" alt="商品图片"/>
+						<img class="img_yi" src="images/yichengjiao@2x.png" alt="已成交"/>
+					</div>
+					<div class="middle">
+						<p class="username">
+							<span>成交人：</span>
+							<span>一本万利</span>
+						</p>
+						<p class="market_price">
+							<span>市场价：</span>
+							<span>￥452.20</span>
+						</p>
+						<p class="username">
+							<span>成交价：</span>
+							<span class="redd">￥452.20</span>
+						</p>
+					</div>
+					<div class="right">
+						<p>节省</p>
+						<p class="precent"><i>87.5</i>%</p>
+						<p class="btn">参与竞拍</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<!---->
+		<!--底部导航-->
+		<div class="nav">
+			<div class="nav_ul">
+				<a href="index.html" >首页</a>
+				<a href="completed_newest.html" class="cur">最新成交</a>
+				<a href="classify.html">商品分类</a>
+				<a href="personal.html">个人中心</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//	跑马灯
+		    var swiper = new Swiper('.marquees-container', {
+		        direction : 'vertical',
+		        loop :true,
+		        noSwiping :true,
+		        autoplay:4000,
+		    });
+		    //点击参与竞拍按钮
+		    $('.btn').click(function() {
+		    		location.href = "index.html";
+		    });
+		    //点击跑马灯跳转详情页
+		    $('.marquees_div').click(function() {
+		    		location.href = "product_detail.html";
+		    });
+		</script>
+	</body>
+</html>

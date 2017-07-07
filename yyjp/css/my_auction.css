@@ -1,0 +1,162 @@
+.w-list {
+    margin-top: 1rem;
+}
+
+.w-nav {
+    display: -webkit-box;
+    display: box;
+    height: .86rem;
+    background-color: #fff;
+}
+
+.w-nav-item {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-align: stretch;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+.w-nav-txt {
+    display: inline-block;
+    overflow: hidden;
+    color: #4c4c4c;
+    font-size: .28rem;
+    white-space: nowrap;
+    line-height: .86rem;
+}
+
+.w-nav-item-on .w-nav-txt {
+    border-bottom: .04rem solid #ff334b;
+    color: #ff334b;
+}
+
+.list-top {
+    width: 100%;
+    height: 1.7rem;
+    position: relative;
+    border-bottom: 0.01rem solid #f0f0f0;
+}
+
+.top-left {
+    float: left;
+    width: 1.77rem;
+    height: 1.7rem;
+}
+
+.top-middle {
+    float: left;
+    display: table;
+    height: 1.7rem;
+}
+
+.top-right {
+    float: right;
+    width: 1.5rem;
+    height: 1.7rem;
+}
+
+.top-middle-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.watermark {
+    width: 1.18rem;
+    height: 1.02rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.middle-text1 {
+    font-size: .26rem;
+    color: #4d4d4d;
+}
+
+.middle-text1 span {
+    font-size: .32rem;
+    color: #fc3750;
+}
+
+.middle-text2 {
+    font-size: .26rem;
+    color: #808080;
+}
+
+.right-text1 {
+    font-size: .24rem;
+    color: #4d4d4d;
+    float: right;
+    clear: both;
+    margin-right: .26rem;
+    margin-top: .3rem;
+}
+
+.right-text2 {
+    font-size: .36rem;
+    color: #fc3750;
+    float: right;
+    clear: both;
+    margin-right: .26rem;
+}
+
+.right-text2 span {
+    font-size: .24rem;
+}
+
+.list-bottom {
+    border-bottom: 0.01rem solid #f0f0f0;
+}
+
+.bottom-left {
+    float: left;
+    height: 1.6rem;
+}
+
+.bottom-right {
+    float: right;
+    height: 1.6rem;
+}
+
+.bottom-text1 {
+    font-size: .28rem;
+    color: #4d4d4d;
+    padding-left: .3rem;
+    margin-top: .3rem;
+}
+
+.bottom-text2 {
+    font-size: .24rem;
+    color: #4d4d4d;
+    padding-left: .3rem;
+    margin-top: .2rem;
+    margin-bottom: .3rem;
+}
+
+.bottom-text2 span {
+    color: #ff334b;
+}
+
+.bottom-text3 {
+    width: 1.5rem;
+    height: 0.56rem;
+    border: .02rem solid #ff334b;
+    border-radius: .04rem;
+    line-height: .56rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ff334b;
+    margin-top: 0.52rem;
+    margin-right: 0.26rem;
+}

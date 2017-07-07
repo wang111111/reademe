@@ -1,0 +1,501 @@
+/*****首页-title******/
+.header{
+	z-index:100;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:1rem;
+	background: rgb(252,55,80);
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.36rem;
+	color: #FFFFFF;
+}
+/*****首页-轮播图******/
+.swiper-container {
+	margin-top:1rem;
+	height:3rem;
+	width: 100%;
+	background-color:#00c6ff;
+}
+.swiper-slide{
+	border:none;
+}
+.swiper-img{
+	height:100%;
+	width:100%;
+	border:none;
+	background-color: #FFFFFF;
+}
+.swiper-pagination{
+	vertical-align: middle;
+}
+.swiper-pagination .swiper-pagination-bullet{
+	width: 0.26rem;
+	height: 0.02rem;
+	background: #FFFFFF;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+	width: 0.16rem;
+	height: 0.16rem;
+	border-radius: 50%;
+}
+/*竞拍成功状态--轮播图*/
+.swiper_completed{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.22rem;
+	margin-top: -1.07rem;
+	width: 2.45rem;
+	height: 2.14rem;
+	display: none;
+}
+/**/
+/*已成交--轮播图*/
+.swiper_already{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.22rem;
+	margin-top: -1.07rem;
+	width: 2.45rem;
+	height: 2.14rem;
+	display: none;
+}
+/**/
+/*弹幕*/
+.bullet{
+	padding: 0 0.2rem;
+	border-radius: 0.2rem;
+	background-color: rgba(0,0,0,0.46);
+	color: #FFFFFF;
+	font-size: 0.2rem;
+	position: absolute;
+	left: 0.2rem;
+	top: 0.2rem;
+	z-index: 1;
+}
+/*商品描述*/
+.s_describe{
+	padding: 0.3rem 0;
+	text-align: center;
+	background: #FFFFFF;
+}
+.s_describe_title{
+	font-size: 0.3rem;
+	font-weight: bold;
+	color: #333333;
+	margin-bottom: 0.2rem;
+}
+.s_describe_content{
+	font-size: 0.24rem;
+	color: #737373;
+}
+.s_auction_now{
+	padding: 0.2rem 0 0.4rem;
+	text-align: center;
+	color: #737373;
+	background: #FFFFFF;
+}
+/*吸顶*/
+.xiding{
+	position: fixed;
+	left: 0;
+	top: 1rem;
+	width: 100%;
+	height: 2rem;
+	background: #FFFFFF;
+}
+.st_txt{
+	font-size: 0.26rem;
+	margin-bottom: 0.2rem;	
+}
+/*竞拍结束状态--倒计时*/
+.st_txt_completed{
+	font-size: 0.26rem;
+	margin-bottom: 0.2rem;
+	display: none;
+}
+/**/
+.st_count_down{
+	font-size: 0.48rem;
+	font-weight: bolder;
+	/*color: #4D4D4D;*/
+	color: #FF334B;
+	margin-bottom: 0.4rem;
+}
+.s_auction_now_price{
+	padding: 0 0.2rem;
+}
+.sp_symbol{
+	font-size: 0.28rem;
+	color: #FF334B;
+}
+.sp_price{
+	font-size: 0.38rem;
+	color: #FF334B;
+	margin-right: 0.4rem;
+}
+.sp_txt{
+	font-size: 0.22rem;
+}
+.sp_market{
+	color: #4D4D4D;
+	font-size: 0.28rem;
+	text-decoration: line-through;
+}
+/*竞拍提示*/
+.s_tip{
+	height: 0.68rem;
+	line-height: 0.68rem;
+	border-top-color: #F0F0F0;
+	border-top-style: solid;
+	border-top-width: 0.01rem;
+	font-size: 0.28rem;
+	color: #4D4D4D;
+	text-align: center;
+	background: #FFFFFF;
+	margin-bottom: 0.3rem;
+}
+.bid_record{
+	padding: 0 0.26rem;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	font-size: 0.26rem;
+	background: #FFFFFF;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.01rem;
+}
+.bid_record_l{
+	float: left;
+	color: #4D4D4D;
+	padding-left: 0.6rem;
+	background: url(../images/product_detail/chujiajilu@3x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+}
+.bid_record_r{
+	float: right;
+	color: #808080;
+	padding-right: 0.5rem;
+	background: url(../images/product_detail/more@3x.png) no-repeat;
+	background-size: 0.3rem 0.3rem;
+	background-position: right center;
+}
+.b_record_info{
+	padding: 0.2rem 0.26rem;
+	background: #FFFFFF;
+	font-size: 0.28rem;
+	margin-bottom: 0.3rem;
+	color: #737373;
+}
+.b_record__list:nth-of-type(1){
+	color: #FF334B;
+}
+.b_record__list:nth-of-type(2){
+	margin: 0.3rem 0;
+}
+.b_record__list .item{
+	width: 25%;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+}
+.b_record__list .b_first{
+	text-align: left;
+}
+.b_record__list .b_last{
+	text-align: right;
+}
+/*一元竞拍*/
+.p_o_auction{
+	padding: 0 0.26rem;
+	height: 0.68rem;
+	line-height: 0.68rem;
+	font-size: 0.26rem;
+	background: #FFFFFF;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.01rem;
+}
+.p_o_auction p{
+	color: #4D4D4D;
+	padding-left: 0.6rem;
+	background: url(../images/product_detail/oneauction@3x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+}
+.p_o_auction_list{
+	padding: 0.2rem 0.26rem;
+	font-size: 0.28rem;
+	color: #737373;
+	background: #FFFFFF;
+}
+.p_o_auction_list .item{
+	width: 3rem;
+	margin-right: 0.98rem;
+	margin-bottom: 0.3rem;
+	float: left;
+}
+.p_o_auction_list .item:nth-of-type(even){
+	margin-right: 0;
+}
+.p_o_auction_list .item:last-of-type{
+	margin-bottom: 0;
+}
+.p_o_auction_list .item .item_l{
+	float: left;
+}
+.p_o_auction_list .item .item_r{
+	float: right;
+}
+/*承诺*/
+.p_promise{
+	height: 0.66rem;
+	line-height: 0.66rem;
+	padding: 0 0.26rem;
+	background: #ffe5ec;
+	font-size: 0.26rem;
+	color: #4D4D4D;
+}
+.p_promise .item{
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	padding-left: 0.6rem;
+}
+.p_promise .item:nth-of-type(1){
+	background: url(../images/product_detail/fenxiang@3x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+}
+.p_promise .item:nth-of-type(2){
+	background: url(../images/product_detail/zhengpin@3x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+}
+.p_promise .item:nth-of-type(3){
+	background: url(../images/product_detail/fahuo@3x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+}
+.p_promise .item:nth-of-type(4){
+	background: url(../images/product_detail/tianping@3x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+}
+.p_white{
+	height: 0.3rem;
+	background: #FFFFFF;
+	margin-bottom: 0.25rem;
+}
+/*晒单分享，往期成交，竞拍规则*/
+.p_bask{
+	background: #FFFFFF;
+}
+.p_bask_title{
+	height: 0.68rem;
+	line-height: 0.68rem;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.01rem;
+}
+/*吸顶*/
+.xiding2{
+	position: fixed;
+	left: 0;
+	top: 3.6rem;
+	width: 100%;
+	background: #FFFFFF;
+}
+.p_bask_title .item{
+	width:  33.3%;
+	float: left;
+	font-size: 0.24rem;
+	color: #737373;
+	text-align: center;
+}
+.p_bask_title .item.cur{
+	position: relative;
+	color: #FF334B;
+}
+/*晒单分享*/
+.p_bask_content{
+	/*display: none;*/
+}
+.p_bask_content_item{
+	padding: 0.3rem 0.26rem;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.01rem;
+}
+.p_bask_portrait_l{
+	width: 0.84rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+.p_bask_portrait_r{
+	width: 5.94rem;
+	float: left;
+}
+.p_bask_portrait{
+	width: 0.84rem;
+	height: 0.84rem;
+	border-radius: 50%;
+	border: 0.01rem solid #CCCACA;
+}
+.p_bask_portrait img{
+	width: 100%;
+	height: 100%;
+}
+.p_bask_portrait_r .username_time{
+	margin-bottom: 0.2rem;
+}
+.p_bask_portrait_r .username_time .username{
+	float: left;
+	font-size: 0.24rem;
+	color: #00b2fe;
+}
+.p_bask_portrait_r .username_time .time{
+	float: right;
+	font-size: 0.22rem;
+	color: #808080;
+}
+.p_bask_portrait_r .shopname{
+	font-size: 0.26rem;
+	color: #FF334B;
+	margin-bottom: 0.2rem;
+}
+.p_bask_portrait_r .usersay{
+	font-size: 0.24rem;
+	color: #808080;
+	margin-bottom: 0.2rem;
+}
+.portrait_r_bask_item{
+	width: 1.7rem;
+	height: 1.7rem;
+	margin-right: 0.4rem;
+	margin-bottom: 0.2rem;
+	border-radius: 0.2rem;
+	float: left;
+}
+.portrait_r_bask_item img{
+	width: 100%;
+	height: 100%;
+}
+.portrait_r_bask_item:nth-of-type(3n+3){
+	margin-right: 0;
+}
+/*往期成交*/
+.p_deal{
+	display: none;
+}
+.p_deal_portrait_m{
+	float: left;
+	width: 4rem;
+	font-size: 0.22rem;
+	color: #808080;
+}
+.p_deal_portrait_m .username{
+	font-size: 0.24rem;
+	color: #00B2FE;
+	margin-bottom: 0.2rem;
+}
+.p_deal_portrait_m .price .market_price{
+	font-size: 0.26rem;
+}
+.p_deal_portrait_m .money{
+	margin: 0.2rem 0;
+}
+.p_deal_portrait_m .money .rea_money{
+	font-size: 0.26rem;
+	color: #FF334B;
+}
+.p_deal_portrait_r{
+	float:left;
+	width: 1.94rem;
+	text-align: right;
+	font-size: 0.22rem;
+	color: #808080;
+	line-height: 1.5rem;
+}
+.p_deal_portrait_r .save{
+	font-size: 0.28rem;
+	color: #FF334B;
+}
+/*竞拍规则*/
+.p_rule{
+	padding: 0.3rem 0.26rem;
+	font-size: 0.26rem;
+	color: #808080;
+	margin-bottom: 1rem;
+	display: none;
+}
+.p_rule p{
+	margin-bottom: 0.2rem;
+}
+/*底部出价按钮*/
+.auction_btn{
+	width: 6.98rem;
+	height: 0.88rem;
+	position: fixed;
+	left: 0.26rem;
+	bottom: 0;
+	border-radius: 0.1rem;
+	background: #FF334B;
+	color: #FFFFFF;
+	font-size: 0.26rem;
+	text-align: center;
+/*	display: none;*/
+}
+.auction_btn .txtabove{
+	font-size: 0.32rem;
+}
+/*竞拍完成--底部按钮*/
+.auction_btn_completed{
+	width: 6.98rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	position: fixed;
+	left: 0.26rem;
+	bottom: 0;
+	font-size: 0.26rem;
+	display: none;
+}
+.check_order_btn{
+	width: 3.34rem;
+	height: 0.88rem;
+	float: left;
+	border-radius: 0.1rem;
+	background-color: #ffb873;
+	text-align: center;
+	color: #FFFFFF;
+}
+.gotonext_btn{
+	width: 3.34rem;
+	height: 0.88rem;
+	float: right;
+	border-radius: 0.1rem;
+	background-color: #FF334B;
+	text-align: center;
+	color: #FFFFFF;
+}
+.auction_btn_already{
+	width: 6.98rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	position: fixed;
+	left: 0.26rem;
+	bottom: 0;
+	border-radius: 0.1rem;
+	background: #FF334B;
+	color: #FFFFFF;
+	font-size: 0.36rem;
+	text-align: center;
+	display: none;
+}

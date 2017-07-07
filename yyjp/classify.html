@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品分类</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/classify.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">一元竞拍</div>
+		<!---->
+		<div class="content clearfix">
+			<!--左边导航-->
+			<ul class="left">
+				<li class="l_item active">苹果专区</li>
+				<li class="l_item">充值卡劵</li>
+				<li class="l_item">十元专区</li>
+				<li class="l_item">手机平板</li>
+				<li class="l_item">家用电器</li>
+				<li class="l_item">美食天地</li>
+				<li class="l_item">电脑数码</li>
+				<li class="l_item">户外运动</li>
+				<li class="l_item">日用百货</li>
+				<li class="l_item">家用电器</li>
+				<li class="l_item">美食天地</li>
+				<li class="l_item">电脑数码</li>
+				<li class="l_item">户外运动</li>
+				<li class="l_item">日用百货</li>
+			</ul>
+			<!---->
+			<!--右边列表-->
+			<ul class="right">
+				<li class="r_item clearfix">
+					<div class="img">
+						<img src="" alt="商品图片" />
+					</div>
+					<div class="goods_info">
+						<div class="c_countDown">
+							<img class="c_countDown_img" src="images/index/countdown@3x.png" alt="倒计时" />
+							<span class="c_countDown_num">00:00:<i>07</i></span>
+						</div>
+						<div class="c_price">￥<i>320.30</i></div>
+						<div class="c_username">一本万利</div>
+					</div>
+				</li>
+				<li class="r_item clearfix">
+					<div class="img">
+						<img src="" alt="商品图片" />
+					</div>
+					<div class="goods_info">
+						<div class="c_countDown">
+							<img class="c_countDown_img" src="images/index/countdown@3x.png" alt="倒计时" />
+							<span class="c_countDown_num">00:00:<i>07</i></span>
+						</div>
+						<div class="c_price">￥<i>320.30</i></div>
+						<div class="c_username">一本万利</div>
+					</div>
+				</li>
+				<li class="r_item clearfix">
+					<div class="img">
+						<img src="" alt="商品图片" />
+					</div>
+					<div class="goods_info">
+						<div class="c_countDown">
+							<img class="c_countDown_img" src="images/index/countdown@3x.png" alt="倒计时" />
+							<span class="c_countDown_num">00:00:<i>07</i></span>
+						</div>
+						<div class="c_price">￥<i>320.30</i></div>
+						<div class="c_username">一本万利</div>
+					</div>
+				</li>
+				<li class="r_item clearfix">
+					<div class="img">
+						<img src="" alt="商品图片" />
+					</div>
+					<div class="goods_info">
+						<div class="c_countDown">
+							<img class="c_countDown_img" src="images/index/countdown@3x.png" alt="倒计时" />
+							<span class="c_countDown_num">00:00:<i>07</i></span>
+						</div>
+						<div class="c_price">￥<i>320.30</i></div>
+						<div class="c_username">一本万利</div>
+					</div>
+				</li>
+				<li class="r_item clearfix">
+					<div class="img">
+						<img src="" alt="商品图片" />
+					</div>
+					<div class="goods_info">
+						<div class="c_countDown">
+							<img class="c_countDown_img" src="images/index/countdown@3x.png" alt="倒计时" />
+							<span class="c_countDown_num">00:00:<i>07</i></span>
+						</div>
+						<div class="c_price">￥<i>320.30</i></div>
+						<div class="c_username">一本万利</div>
+					</div>
+				</li>
+				<li class="r_item clearfix">
+					<div class="img">
+						<img src="" alt="商品图片" />
+					</div>
+					<div class="goods_info">
+						<div class="c_countDown">
+							<img class="c_countDown_img" src="images/index/countdown@3x.png" alt="倒计时" />
+							<span class="c_countDown_num">00:00:<i>07</i></span>
+						</div>
+						<div class="c_price">￥<i>320.30</i></div>
+						<div class="c_username">一本万利</div>
+					</div>
+				</li>
+			</ul>
+			<!---->
+		</div>
+		<!--底部导航-->
+		<div class="nav">
+			<div class="nav_ul">
+				<a href="index.html">首页</a>
+				<a href="completed_newest.html">最新成交</a>
+				<a href="classify.html" class="cur">商品分类</a>
+				<a href="personal.html">个人中心</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//左边分类导航点击效果
+			$('.l_item').on('click',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+			//下面导航效果
+			$('.nav_ul a').on('click',function(){
+				$(this).addClass('cur').siblings().removeClass('cur');
+				console.log($(this));
+			})
+			//点击商品跳转详情页
+			$('.r_item').on('click',function(){
+				location.href = "product_detail.html";
+			})
+		</script>
+	</body>
+</html>

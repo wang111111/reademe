@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的晒单</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my_bask.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-left">
+				<img src="images/product_detail/back@3x.png" alt="" class="header-left-img" />
+			</div>
+			我的晒单</div>
+		<!---->
+		<!--如果没有数据时-->
+		<div class="nodata" style="text-align: center;margin-top: 2.9rem; display: none;">
+			<img style="width: 2.66rem;height: 2.46rem;margin-bottom: 0.5rem;" src="images/nodata@2x.png" alt="没有数据" />
+			<p style="font-size: 0.28rem;color: #808080;">暂时没有晒单记录~</p>
+		</div>
+		<!---->
+		<!--头部商品信息-->
+		<div class="zjzt-top clearfix">
+	        <div class="zjzt-pic">
+	            <img src="" alt="奖品">
+	        </div>
+	        <div class="zjzt-txt">
+	            <h3>产品名称产品名称产品名称产品名称产品名称产品名称产品名称产品名称</h3>
+	            <p class="txt-hui">成交价：<i class="txt-hui_money redd">￥10.50</i></p>
+	        </div>
+	        <a href="#" class="gotobask">立即晒单</a>
+	    </div>
+	    <!---->
+	    <div class="content">
+		    	<div class="user_info clearfix">
+		    		<div class="img">
+		    			<img src="" alt="头像" />
+		    		</div>
+		    		<div class="usertxt">
+		    			<p class="username">第一次我就中</p>
+		    			<p class="usertime">2017-06-10 15:40:08</p>
+		    		</div>
+		    	</div>
+		    	<ul class="goods_list">
+		    		<li class="goods_info">
+		    			<p class="goods_name">火影笔记本</p>
+		    			<p class="user_say">第一次参与拍得，竞价几次就没人跟我抢了</p>
+		    			<ul class="goods_img clearfix">
+		    				<li class="goods_img_item">
+		    					<img src="" alt="用户晒图" />
+		    				</li>
+		    				<li class="goods_img_item">
+		    					<img src="" alt="用户晒图" />
+		    				</li>
+		    				<li class="goods_img_item">
+		    					<img src="" alt="用户晒图" />
+		    				</li>
+		    				<li class="goods_img_item">
+		    					<img src="" alt="用户晒图" />
+		    				</li>
+		    				<li class="goods_img_item">
+		    					<img src="" alt="用户晒图" />
+		    				</li>
+		    			</ul>
+		    		</li>
+		    		
+		    	</ul>
+	    </div>
+	    <script>
+		    	//返回上一级页面
+			$('.header-left').on('click',function(){
+				history.go(-1);
+			});
+	    </script>
+	</body>
+</html>

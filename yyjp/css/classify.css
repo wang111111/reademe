@@ -1,0 +1,73 @@
+.content{
+	margin-top: 1rem;
+	height: 12.34rem;
+	overflow: hidden;
+}
+/*左边导航*/
+ul.left{
+	width:1.8rem;
+	height: 12.34rem;
+	overflow: auto;
+	float: left;
+	margin-bottom: 1rem;
+}
+.left .l_item{
+	width: 1.8rem;
+	height: 1.22rem;
+	color: #4C4C4C;
+	font-size: 0.32rem;
+	text-align: center;
+	line-height: 1.22rem;
+	background-color: #F0F0F0;
+}
+.left li.active{
+	background-color: #FFFFFF;
+	color: #FF334B;
+}
+/*右边列表*/
+ul.right{
+	width: 5.7rem;
+	height: 100%;
+	overflow: auto;
+	margin-bottom: 1rem;
+	background-color: #FFFFFF;
+	float: left;
+}
+.r_item{
+	padding: 0.4rem;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.02rem;
+}
+.r_item .img{
+	float: left;
+	width: 1.38rem;
+	height: 1.38rem;
+	margin-right: 0.8rem;
+}
+.r_item .img img{
+	width: 100%;
+	height: 100%;
+}
+.goods_info{
+	float: left;
+}
+.c_countDown_img{
+	width: 0.24rem;
+	height: 0.28rem;
+}
+.c_countDown_num{
+	font-size: 0.36rem;
+	color: #FF334B;
+}
+.c_price{
+	font-size: 0.36rem;
+	color: #FF334B;
+	font-weight: bold;
+	margin: 0.26rem 0;
+}
+.c_username{
+	font-size: 0.32rem;
+	color: #4C4C4C;
+	font-weight: bold;
+}

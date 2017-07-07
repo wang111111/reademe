@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2-min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-right">
+            <img src="images/tab/X.png" alt="" class="header-right-img">
+        </div>
+    </div>
+    <div style="height: 1rem"></div>
+    <div class="main_bg">
+        <div class="container">
+            <h1>用户登录</h1>
+            <div class="section1 clearfix">
+                <img src="images/login/icon_phone.png" alt="">
+                <input type="text" maxlength="11" placeholder="请输入您的手机号" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" />
+            </div>
+            <div class="box clearfix">
+                <div class="section2 clearfix">
+                    <img src="images/login/icon_code.png" alt="">
+                    <input type="password" placeholder="请输入验证码" maxlength="10">
+                </div>
+                <p class="section3" id="code">获取验证码</p>
+            </div>
+            <div class="btn">登 录</div>
+            <div class='next clearfix' id="next">
+                <p style="color: #fc0048;margin-left: .1rem">>></p>
+                <p>随便逛逛</p>
+            </div>
+            <div class="other_way clearfix">
+                <div class="other_way_line"></div>
+                <p class="other_way_text">其他登录方式</p>
+                <div class="other_way_line"></div>
+            </div>
+            <div class="third-party clearfix">
+                <div class="fl" id="qq">
+                    <img src="images/login/icon_qq.png" alt="">
+                    <p>QQ登录</p>
+                </div>
+                <div class="fr" id="wx">
+                    <img src="images/login/icon_wx.png" alt="">
+                    <p>微信登录</p>
+                </div>
+            </div>
+            <div class="pagefooter">
+                <p>声明：所有奖品抽奖活动与苹果公司(Apple Inc)无关</p>
+                <p class="clearfix" style="text-align: center;">
+                    <span class="not agree" id="agree"></span> 我同意《一元夺宝服务协议》
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+    // 同意协议
+    $('#agree').click(function() {
+        $('#agree').toggleClass('agree');
+    });
+    // 获取验证码
+    $('#code').click(function() {
+        var time = 60;
+        setTime = setInterval(function() {
+            if (time <= 0) {
+                clearInterval(setTime);
+                $("#code").text('重新获取');
+                return;
+            }
+            time--;
+            $("#code").text(time);
+        }, 1000);
+    });
+    // 第三方登陆
+    $('#qq').click(function() {
+
+    });
+    $('#wx').click(function() {
+
+    });
+    // 随便逛逛
+    $('#next').click(function() {
+
+    });
+    </script>
+</body>
+
+</html>

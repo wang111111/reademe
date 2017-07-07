@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>收支明细</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/income_detail.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+	</head>
+	<body style="background-color: #fff;font-family: 'PingFang SC Medium'">
+	<div class="header">
+        收支明细
+        <div class="header-left">
+            <img src="images/tab/return.png" alt="" class="header-left-img">
+        </div>
+    </div>
+    <div style="height: 1rem;"></div>
+    <div class="gold clearfix">
+    		<div class="jin_gold">竞拍币：<i class="redd">0</i></div>
+    		<div class="zeng_gold">赠币：<i class="redd">0</i></div>
+    </div>
+    <div style="background: #F0F0F0;height: 0.3rem;"></div>
+    <div class="content_wrap">
+	    	<ul class="nav_bar">
+	    		<li class="out cur">支出明细
+	    			<span class="list_top_ul_line curShow"></span>
+	    		</li>
+	    		<li class="get">收益明细
+	    			<span class="list_top_ul_line"></span>
+	    		</li>
+	    	</ul>
+	    	<ul class="content zhichu">
+	    		<li class="item clearfix">
+	    			<div class="item_left">
+	    				<h2>出价扣除</h2>
+	    				<p>2017-06-28 19:12:58</p>
+	    			</div>
+	    			<div class="item_right">-<i>1</i>拍币</div>
+	    		</li>
+	    		<li class="item clearfix">
+	    			<div class="item_left">
+	    				<h2>出价扣除</h2>
+	    				<p>2017-06-28 19:12:58</p>
+	    			</div>
+	    			<div class="item_right">-<i>1</i>拍币</div>
+	    		</li>
+	    	</ul>
+	    	<ul class="content shouyi">
+	    		<li class="item clearfix">
+	    			<div class="item_left">
+	    				<h2>签到</h2>
+	    				<p>2017-06-28 19:12:58</p>
+	    			</div>
+	    			<div class="item_right">+<i>20</i></div>
+	    		</li>
+	    		<li class="item clearfix">
+	    			<div class="item_left">
+	    				<h2>分享</h2>
+	    				<p>2017-06-28 19:12:58</p>
+	    			</div>
+	    			<div class="item_right">+<i>30</i></div>
+	    		</li>
+	    	</ul>
+    </div>
+    <script>
+    	//tab切换
+    		var dom = $('.nav_bar li');
+		tabSwitch(dom);
+		$('.nav_bar li').on('click',function(){
+			var index = $(this).index();
+			if(index == 0){
+				$('.zhichu').show();
+				$('.shouyi').hide();
+			}else{
+				$('.zhichu').hide();
+				$('.shouyi').show();
+			}
+		})
+		//返回上一级页面
+		$('.header-left').on('click',function(){
+			history.go(-1);
+		});
+    </script>
+	</body>
+</html>

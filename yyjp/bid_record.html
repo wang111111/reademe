@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拍卖记录</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bid_record.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-left">
+				<img src="images/product_detail/back@3x.png" alt="" class="header-left-img" />
+			</div>
+			出价记录
+		</div>
+		<!---->
+		<!--内容部分-->
+		<ul class="bid_content">
+			<li class="content_list clearfix">
+				<span class="username">一本万利</span>
+				<span class="state">领先</span>
+				<span class="site">上海静安</span>
+				<span class="money">￥11.50</span>
+			</li>
+			<li class="content_list clearfix">
+				<span class="username">一本万利</span>
+				<span class="state">领先</span>
+				<span class="site">上海静安</span>
+				<span class="money">￥11.50</span>
+			</li>
+		</ul>
+		<!---->
+		<script>
+			$('.header-left').on('click',function(){
+				window.history.go(-1);
+			})
+		</script>
+	</body>
+</html>

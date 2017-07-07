@@ -1,0 +1,52 @@
+.banner{
+	height: 3.7rem;
+}
+.banner img{
+	width: 100%;
+}
+.notice_wrap{
+	height: 0.88rem;
+	padding-left: 0.26rem;
+	line-height: 0.88rem;
+	border-bottom-color: #F0F0F0;
+	border-bottom-style: solid;
+	border-bottom-width: 0.01rem;
+}
+.notice{
+	padding-left: 0.6rem;
+	background: url(../images/bask_jiang/notice@2x.png) no-repeat;
+	background-size: 0.4rem 0.4rem;
+	background-position: left center;
+	font-size: 0.36rem;
+	color: #FF334B; 
+}
+.content{
+	padding: 0.3rem 0.26rem 0;
+	font-size: 0.28rem;
+	color: #808080;
+}
+.title{
+	font-size: 0.32rem;
+	color: #4D4D4D;
+	margin-bottom: 0.3rem;
+}
+.info{
+	margin-bottom: 0.5rem;
+}
+.tip{
+	font-size: 0.26rem;
+	color: #FF334B;
+}
+.bask_btn{
+	width: 6.98rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	position: fixed;
+	left: 0.26rem;
+	bottom: 0.32rem;
+	text-align: center;
+	background-color: #FF334B;
+	border-radius: 0.1rem;
+	font-size: 0.36rem;
+	color: #FFFFFF;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>积分兑换</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/integral.css"/>
+		<script type="text/javascript" src="js/rem.js" ></script>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="header-left">
+				<img src="images/product_detail/back@3x.png" alt="" class="header-left-img" />
+			</div>
+			<div>积分兑换</div>
+			<a href="income_detail.html" class="header-right">收支明细</a>
+		</div>
+		<!---->
+		<!--我的积分-->
+		<div class="integral_header clearfix">
+			<div class="left">我的积分:</div>		
+			<div class="right">如何获得积分？</div>
+		</div>
+		<div class="inte_middle">100</div>
+		<!---->
+		<!--兑换积分-->
+		<div class="content">
+			<div class="title clearfix">
+				<div class="left">积分兑换</div>
+				<div class="right">
+					<span>今日剩余兑换次数:</span>
+					<i class="redd">2</i>
+				</div>
+			</div>
+			<ul class="content_wrap clearfix">
+				<li class="item">
+					<div class="gold">
+						<span class="symbol">￥</span>
+						<span class="num">1</span>
+						<span class="txt">赠币</span>
+					</div>
+					<div class="integral_btn"><i>100</i>积分</div>
+				</li>	
+				<li class="item">
+					<div class="gold">
+						<span class="symbol">￥</span>
+						<span class="num">1</span>
+						<span class="txt">赠币</span>
+					</div>
+					<div class="integral_btn"><i>100</i>积分</div>
+				</li>
+				<li class="item">
+					<div class="gold">
+						<span class="symbol">￥</span>
+						<span class="num">1</span>
+						<span class="txt">赠币</span>
+					</div>
+					<div class="integral_btn"><i>100</i>积分</div>
+				</li>
+				<li class="item">
+					<div class="gold">
+						<span class="symbol">￥</span>
+						<span class="num">100</span>
+						<span class="txt">赠币</span>
+					</div>
+					<div class="integral_btn"><i>100</i>积分</div>
+				</li>
+			</ul>
+		</div>
+		<!---->
+		<!--模态-->
+		<div class="modal"></div>
+		<!---->
+		<!--如何获取积分弹窗-->
+		<div class="alert">
+			<img class="close" src="images/integral/X@2x.png"/>
+			<div class="img">如何获取积分</div>
+			<div class="item">
+				<h1 class="title">充值</h1>
+				<p class="txt">每消费1元，可获得1积分；</p>
+			</div>
+			<div class="item">
+				<h1 class="title">充值</h1>
+				<p class="txt">每日完成签到可获得积分，签到累计到一定天数后可获得宝箱，宝箱可开出竞拍币；</p>
+			</div>
+			<div class="item">
+				<h1 class="title">充值</h1>
+				<p class="txt">通过分享可获得积分，每日首次有效。</p>
+			</div>
+		</div>
+		<!---->
+		<script type="text/javascript">
+			//返回上一级页面
+			$('.header-left').on('click',function(){
+				history.go(-1);
+			});
+			//点击如何获得积分弹窗
+			$('.integral_header .right').click(function() {
+				$('.modal').show();
+				$('.alert').show();
+			});
+			//关闭弹窗
+			$('.close').on('click',function() {
+				$(this).parent().hide();
+				$('.modal').hide();
+			})
+		</script>
+	</body>
+</html>
